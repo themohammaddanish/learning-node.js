@@ -13,3 +13,9 @@ fs.writeFile("danish2.txt", "danish is a good boy", ()=>{
     console.log(error, data.toString())
   })
 })
+
+fs.appendFile("danish.txt" , "this text is added" , ()=> {
+  fs.readFile("danish.txt", (error,data)=>{
+    console.log(error, data.toString())
+  })
+})
