@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const port = 3000;
+const fs = require("fs");
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
@@ -10,12 +11,9 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
 
-console.log("hello world");
-function add(a, b) {
-  return a + b;
-}
 
-console.log(add(4, 5));
+
+
 
 const fs = require("fs");
 // fs.writeFileSync("danish.txt", "hey its me danish khan im a dev")
