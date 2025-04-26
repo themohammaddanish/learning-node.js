@@ -1,32 +1,17 @@
-const express = require("express");
-const app = express();
-const port = 3000;
-const fs = require("fs");
+// const fs = require("fs");
+// // fs.writeFileSync("danish.txt", "hey its me danish khan im a dev")
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+// fs.writeFile("danish2.txt", "danish is a good boy", () => {
+//   console.log("done");
+//   fs.readFile("danish2.txt", (error, data) => {
+//     console.log(error, data.toString());
+//   });
+// });
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+// fs.appendFile("danish.txt", "this text is added", () => {
+//   fs.readFile("danish.txt", (error, data) => {
+//     console.log(error, data.toString());
+//   });
+// });
 
 
-
-
-
-const fs = require("fs");
-// fs.writeFileSync("danish.txt", "hey its me danish khan im a dev")
-
-fs.writeFile("danish2.txt", "danish is a good boy", () => {
-  console.log("done");
-  fs.readFile("danish2.txt", (error, data) => {
-    console.log(error, data.toString());
-  });
-});
-
-fs.appendFile("danish.txt", "this text is added", () => {
-  fs.readFile("danish.txt", (error, data) => {
-    console.log(error, data.toString());
-  });
-});
