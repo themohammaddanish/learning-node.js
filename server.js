@@ -22,8 +22,14 @@ app.get("/", (req, res) => {
   res.send("Hello World!5545");
 });
 
+app.get("/about", (req, res) => {
+  res.send("this is about us okay");
+});
+
+app.get("/contact-us", (req, res) => {
+  res.send("you can conact me here");
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
-
-
