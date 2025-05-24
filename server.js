@@ -17,6 +17,8 @@
 const express = require("express");
 const app = express();
 const port = 3000;
+app.use(express.static("public"));
+
 
 app.get("/", (req, res) => {
   res.send("Hello World!5545");
@@ -24,10 +26,10 @@ app.get("/", (req, res) => {
 
 app.get("/about", (req, res) => {
   res.send("this is about us okay");
-});
+}); 
 
 app.get("/blog/:slug", (req, res) => {
-  res.send('this is ${req.params.slug}');
+  res.send(`this is ${req.params.slug}`);
 });
 
 app.get("/contact-us", (req, res) => {
