@@ -19,7 +19,7 @@ const app = express();
 const port = 5000;
 
 app.get("/", (req, res) => {
-  res.send("do this happening there");
+  res.send("checking the consdition");
 });
 
 
