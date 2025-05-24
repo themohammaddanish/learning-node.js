@@ -16,14 +16,14 @@
 
 const express = require("express");
 const app = express();
-const port = 5000;
+const port = 3000;
 
 app.get("/", (req, res) => {
-  res.send("checking the consdition");
+  res.send("Hello World!5545");
 });
-
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
+
 
