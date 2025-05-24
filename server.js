@@ -26,6 +26,10 @@ app.get("/about", (req, res) => {
   res.send("this is about us okay");
 });
 
+app.get("/blog/:slug", (req, res) => {
+  res.send('this is ${req.params.slug}');
+});
+
 app.get("/contact-us", (req, res) => {
   res.send("you can conact me here");
 });
